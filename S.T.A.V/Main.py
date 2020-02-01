@@ -10,6 +10,8 @@ game_res_scale = int(game_resolution.split("x")[0]) / 1024
 #screen_width = root.winfo_screenwidth()
 #screen_height = root.winfo_screenheight()
 
+initial_time = time.time()
+
 #Functions for handling frames###########################################################################
 def raise_frame(frame):
     frame.tkraise()
@@ -94,6 +96,13 @@ def combatSequence():#name, health, armour, damage, sprite):
 	Adversary = Enemy("Test", 20, 3, 5, basicGoonIMG)
 	#combatSequence(MyDictionary.GetName("male", True, False, False), 20, 3, 5, basicGoonIMG)
 	loadActionFrame(Adversary, MainCharacter.currentWeapon)
+
+def get_elapsed_time(initial_time):
+
+    current_time = time.time()
+
+    elapsed_time = current_time - initial_time
+    return(round(elapsed_time))
 
 
 #def output() #Display to command window inside action sequence
