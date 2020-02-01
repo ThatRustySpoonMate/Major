@@ -1,0 +1,1 @@
+*Weapons*, Rusty Handgun, 10, 15, 85, | *Items*, Health potion, consumable, health, 5, | *Armour*, Cloth armour, 2, 
