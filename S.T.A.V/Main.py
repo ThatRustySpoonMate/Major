@@ -112,13 +112,14 @@ def get_elapsed_time(initial_time):
 
 #INITIALIZATION OF GUI WINDOW##################################### 
 root = Tk()
-ActionFrame = Frame(root)
-InventoryFrame = Frame(root)
-MapFrame = Frame(root)
-f4 = Frame(root)
+ActionFrame = Frame(root, width = "1024", height = "576")
+InventoryFrame = Frame(root, width = "1024", height = "576")
+MapFrame = Frame(root, width = "1024", height = "576")
+f4 = Frame(root, width = "1024", height = "576")
 root.title("S.T.A.V")
 root.geometry(game_resolution)	
 root.resizable(False, False)
+ActionFrame.pack()
 
 for frame in (ActionFrame, InventoryFrame, MapFrame, f4):
     frame.grid(row=0, column=0, sticky='news')
@@ -230,10 +231,10 @@ bugTestButton = Button(ActionFrame, text = "TEST", command=combatSequence)
 FireButton.configure(state = DISABLED)
 
 
-ActionLabel.grid(column = 5, row = 0, padx = (50, 0))
-ActionButton1.grid(column = 14, row = 0)
-InventoryButton1.grid(column = 15, row = 0)
-MapButton1.grid(column = 16, row = 0)
+ActionLabel.place(x= 500, y = 5)
+ActionButton1.place(x = 884, y = 0)
+InventoryButton1.place(x = 929, y = 0)
+MapButton1.place(x = 989, y = 0)
 EnemyDescriptionText.grid(pady = 20)
 EnemySprite.grid(column = 4, row = 1, columnspan = 8, rowspan = 5)
 PlayerDescriptionText.grid(column = 14, pady = 20, row = 1, columnspan = 3)
@@ -251,10 +252,10 @@ MapButton2 = Button(InventoryFrame, text='Map', command=lambda:loadMapFrame())
 InventoryContents = Text(InventoryFrame, height = Inventory.Size(), width = 50)
 InventoryButton2.configure(state = DISABLED)
 
-InventoryLabel.grid(column = 0, row = 0)
-ActionButton2.grid(column = 14, row = 0, padx = (10,5))
-InventoryButton2.grid(column = 15, row = 0, padx = 5)
-MapButton2.grid(column = 16, row = 0, padx = 5)
+InventoryLabel.place(x = 500, y = 0)
+ActionButton2.place(x = 884, y = 0)
+InventoryButton2.place(x = 929, y = 0)
+MapButton2.place(x = 989, y = 0)
 InventoryContents.grid()
 
 #Map Window
@@ -264,10 +265,10 @@ InventoryButton3 = Button(MapFrame, text='Inventory', command=lambda:loadInvento
 MapButton3 = Button(MapFrame, text='Map', command=lambda:loadMapFrame())
 MapButton3.configure(state = DISABLED)
 
-MapLabel.grid(column = 4, row = 0, padx = (50, 0))
-ActionButton3.grid(column = 14, row = 0, padx = (10, 5))
-InventoryButton3.grid(column = 15, row = 0, padx = 5)
-MapButton3.grid(column = 16, row = 0, padx = 5)
+MapLabel.place(x = 500, y = 0)
+ActionButton3.place(x = 884, y = 0)
+InventoryButton3.place(x = 929, y = 0)
+MapButton3.place(x = 989, y = 0)
 
 loadActionFrame(Adversary, equippedWeapon)
 root.mainloop()
