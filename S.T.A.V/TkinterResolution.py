@@ -1,9 +1,9 @@
-#resolution = getUserResolution("640x480", "1280x720", "1920x1080", "2560x1440", "3840x2160") SYNTAX
+#resolution = get_user_resolution("640x480", "1280x720", "1920x1080", "2560x1440", "3840x2160") SYNTAX
 from tkinter import *
 
 
 
-def getUserResolution(*args):
+def get_user_resolution(*args):
     global tkvar, confirmed, target_res
 
     confirmed = False
@@ -59,3 +59,5 @@ def getUserResolution(*args):
     
 
     return target_res
+
+

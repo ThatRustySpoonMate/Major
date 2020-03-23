@@ -1,11 +1,11 @@
 import random
 
-def GetAdjective(amount):
+def get_adjective(amount):
 	word = ""
 
 	#List of adjectives
-	adjectivesStart = ["Amazing", "Bloody", "Seductive", "Courageous", "Wistful", "Waggish", "Voracious", "Vivacious", "Vacuous", "Truculent", "Arduous", "Placid", "Loutish", "Insidious", "Incandescent", "Heady", "Erratic", "Direful", "Decorous", "Abhorrent", "Exquisite", "Mesmerising", "Tasteful", "Dangerous", "Absurd", "Surprising", "Curious", "Rediculous", "Superb", "Sagging", "Menacing", "Destructive", "Hasty", "Huge", "Giant", "Scary", "Weighty", "Weightless", "Heavy", "Clumsy", "Superior", "Beautiful", "Gorgeous", "Awkward", "Lethal", "Legendary", "Crazy", "Stupid", "Pearlescent", "Lustrous", "Slimy", "Extraordinary", "Hopeless", "Woeful", "Deep", "Monstrous", "Bountiful", "Atrocious", "Powerful", "Unique", "Mild", "Wreckless", "Disgusting", "Ludicrous"]
-	adjectivesFinal = ["Amazing", "Genuine", "High-quality", "Low-quality", "Indian", "Top-tier", "Holy", "God-Tier", "Sh*t", "Swift", "Wistful", "Sinful", "Innocent", "Petite", "Hairy", "Hard", "Firm", "Sweet", "Blocky", "Throbbing", "Bullsh*t", "B*tchass", "Silky", "Smooth", "Kinky", "Effervescent", "Efficient" "Waggish", "Voracious", "Vivacious", "Vacuous", "Truculent", "Torpid", "Arduous", "Tawdry", "Squalid", "Recondite", "Quixotic", "Plucky", "Placid", "Piquant", "Picayune", "Pentinent", "Overwrought", "Ossified", "Obsequious", "Nondescript", "Macarbe", "Loutish", "Languid", "Irate", "Incandescent", "Heady", "Furtive", "Elated", "Erratic", "Efficacious", "Direful", "Didatic", "Debonair", "Dapper", "Craven", "Brash", "Bawdy", "Acrid", "Exquisite", "Mesmerising", "Tasteful", "Transparent", "Immaculate", "Dense", "Flexible", "Superb", "Strong", "Cute", "Long", "Wide", "Pungent", "Fat", "Dangerous", "Shiny", "Cool", "Sharp", "Menacing", "Pointy", "Destructive", "Loud", "Special", "Speedy", "Hasty", "Blunt", "Huge", "Giant", "Scary", "Weighty", "Mad", "Heavy", "Light", "Clumsy", "Superior", "Beautiful", "Gorgeous", "Awkward", "Lethal", "Deadly", "Fully-sick", "Legendary", "Crazy", "Stupid", "Mad", "Turbocharged", "Pearlescent",  "Lustrous", "Worn", "Slimy", "Atrocious", "Powerful", "Dull", "Marred", "Slick", "Ludicrous", "Extraordinary", "Wet", "Dry", "Boring", "Rusty", "Polished", "Tarnished", "Hopeless", "Woeful", "Rough", "Burred", "Impaired", "Monstrous", "Honoured"] 
+	adjectivesStart = ["Amazing", "Bloody", "Seductive", "Courageous", "Wistful", "Waggish", "Voracious", "Vivacious", "Vacuous", "Truculent", "Arduous", "Placid", "Loutish", "Insidious", "Heady", "Erratic", "Direful", "Decorous", "Abhorrent", "Exquisite", "Mesmerising", "Tasteful", "Dangerous", "Absurd", "Surprising", "Curious", "Rediculous", "Superb", "Menacing", "Destructive", "Hasty", "Scary", "Weighty", "Weightless", "Heavy", "Clumsy", "Superior", "Beautiful", "Gorgeous", "Awkward", "Lethal", "Legendary", "Crazy", "Stupid", "Pearlescent", "Lustrous", "Extraordinary", "Hopeless", "Woeful", "Deep", "Monstrous", "Bountiful", "Atrocious", "Powerful", "Unique", "Mild", "Wreckless", "Disgusting", "Ludicrous"]
+	adjectivesFinal = ["Amazing", "Genuine", "High-quality", "Low-quality", "Top-tier", "Holy", "God-Tier", "Sh*t", "Swift", "Wistful", "Sinful", "Innocent", "Petite", "Hairy", "Hard", "Firm", "Sweet", "Bullsh*t", "B*tchass", "Silky", "Smooth", "Kinky", "Effervescent", "Efficient", "Waggish", "Voracious", "Vivacious", "Vacuous", "Truculent", "Torpid", "Arduous", "Tawdry", "Squalid", "Recondite", "Quixotic", "Plucky", "Placid", "Piquant", "Picayune", "Overwrought", "Ossified", "Obsequious", "Nondescript", "Macarbe", "Loutish", "Languid", "Irate", "Incandescent", "Heady", "Furtive", "Elated", "Erratic", "Efficacious", "Direful", "Didatic", "Debonair", "Dapper", "Craven", "Brash", "Bawdy", "Acrid", "Exquisite", "Mesmerising", "Tasteful", "Transparent", "Immaculate", "Dense", "Flexible", "Superb", "Strong", "Cute", "Long", "Wide", "Pungent", "Fat", "Dangerous", "Shiny", "Cool", "Sharp", "Menacing", "Pointy", "Destructive", "Loud", "Special", "Speedy", "Hasty", "Blunt", "Huge", "Giant", "Scary", "Weighty", "Mad", "Heavy", "Light", "Clumsy", "Superior", "Beautiful", "Gorgeous", "Awkward", "Lethal", "Deadly", "Fully-sick", "Legendary", "Crazy", "Stupid", "Mad", "Turbocharged", "Pearlescent",  "Lustrous", "Worn", "Slimy", "Atrocious", "Powerful", "Dull", "Marred", "Slick", "Ludicrous", "Extraordinary", "Wet", "Dry", "Boring", "Rusty", "Polished", "Tarnished", "Hopeless", "Woeful", "Rough", "Burred", "Impaired", "Monstrous", "Honoured"] 
 
 	if(amount == 1):
 		decider = random.randrange(1,3)
@@ -49,7 +49,7 @@ def GetAdjective(amount):
 	return word
 
 
-def GetName(gender, firstName, middleName, lastName):
+def get_name(gender, firstName, middleName, lastName):
 	name = "a"
 	firstNameWord = ""
 	middleNameWord = ""
@@ -107,5 +107,38 @@ def GetName(gender, firstName, middleName, lastName):
 
 	return name
 
+def get_weapon_name(weapon_type, tier):
+
+	ranged_weapons_name = [ 
+						  ["Make-shift Revolver", "Single-Barrel Shotgun", "Pistol", "Boomerang"], 																						# First tier options     # Expand this
+	 					  ["Double-Barrel Shotgun", "Sub-Machine Gun", "Rifle", "Revolver", "Hand-cannon"],																				# Second tier options    # Expand this
+	 					  ["Rocket Launcher", "Gatling Gun", "Rortary Cannon", "Rail Gun", "Coil Gun", "Particle-beam gun", "Bolt Action Rifle", "Combat Shotgun"]						# Third tier options     # Expand this
+	 					  ]
+
+	melee_weapons_name = [
+						 ["Shiv", "Crow-bar", "Dagger", "Baseball Bat", "Rolling-pin", "Bread Board", "Lead Pipe", "Pipe Wrench", "Hammer", "Quater-Staff"], 							# First tier options     # Expand this
+						 ["Machete", "Axe", "Switchblade", "Spiked-knuckles", "Spiked Mace", "Club", "Flail", "Sickle", "Spear"], 														# Second tier options    # Expand this
+						 ["Greatsword", "War-axe", "Proto-saber", "Lance", "Sledge-hammer"]   																							# Third tier options     # Expand this
+						 ]
+
+	
+
+	if(weapon_type == "melee"):
+		return get_adjective(1) + " " + random.choice(melee_weapons_name[tier - 1])
+	else:
+		return get_adjective(1) + " " + random.choice(ranged_weapons_name[tier - 1])
+
+def get_armour_name(armour_description, tier):
+	#Use get adjective to describe armour
+
+	armour_description = armour_description.replace("_"," ").capitalize()
+	adjectives = random.randrange(0,tier+1)
+	armour_descriptor = get_adjective(adjectives)
+	if(adjectives != 0):
+		armour_name = armour_descriptor + " " + armour_description;
+	else:
+		armour_name = armour_description
+
+	return armour_name
 
 
