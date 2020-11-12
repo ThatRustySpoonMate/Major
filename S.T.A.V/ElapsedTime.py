@@ -12,3 +12,4 @@ def get_elapsed_time(): #Gets the time since the program was opened
 
     elapsed_time = current_time - initial_time
     return(round(elapsed_time))
+

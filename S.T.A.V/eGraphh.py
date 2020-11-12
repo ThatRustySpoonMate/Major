@@ -77,12 +77,6 @@ class graph:
 		canvas.pack(fill=BOTH, expand = 1)
 
 
-
-
-
-
-
-
 class dataPoint:
 	def __init__(self, x, y):
 		self.x = x

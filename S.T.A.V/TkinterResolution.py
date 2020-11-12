@@ -30,6 +30,7 @@ def get_user_resolution(*args):
     horizontal = 200
     vertical = 200
 
+    # As more resolution options are added, scale window size so that drop down doesnt go off of frame
     if(len(args) > 3):
         vertical += 20 * (len(args) - 3)
 
@@ -59,5 +60,3 @@ def get_user_resolution(*args):
     
 
     return target_res
-
-

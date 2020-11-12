@@ -1,0 +1,34 @@
+# These files are made to be editable so that you can easily mod the game :) 
+# Simply replace any of the following locations (beggining with a '', do not change the names above the locations) with an 'at' symbol (@), followed by the absolute path of the desired image
+Pirate
+\Sprites\Enemies\Pirate.png
+Automaton
+\Sprites\Enemies\Automaton.png
+Diesel-Mechanic
+\Sprites\Enemies\Diesel-Mechanic.png
+Dwarf
+\Sprites\Enemies\Dwarf.png
+Clock-work Mage
+\Sprites\Enemies\Clock-work Mage.png
+Baguettist
+\Sprites\Enemies\Baguettist.png
+Ex-marine
+\Sprites\Enemies\Ex-marine.png
+High-brow
+\Sprites\Enemies\High-brow.png
+NoEnemy
+\Sprites\Enemies\NoEnemy.png
+Nuclear-waste Farmer
+\Sprites\Enemies\Nuclear-waste Farmer.png
+French Soldier
+\Sprites\Enemies\French Soldier.png
+Irradiated
+\Sprites\Enemies\Irradiated.png
+Monocle bandit
+\Sprites\Enemies\Monocle bandit.png
+Outlaw
+\Sprites\Enemies\Outlaw.png
+Rich
+\Sprites\Enemies\Rich.png
+Super Mutant
+\Sprites\Enemies\Super Mutant.png

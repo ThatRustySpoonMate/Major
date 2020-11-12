@@ -1,0 +1,6 @@
+You have slain
+You have fell
+You killed
+You maimed
+You executed
+You game ended
